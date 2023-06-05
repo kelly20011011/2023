@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - Dropdown Menus</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" /><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+<link rel="stylesheet" href="/Users/gaoyuxin/Downloads/templatemo_563_seo_dream/assets/css/style.css">
+
+</head>
+<!-- partial:index.partial.html -->
+<div class="side-bar">
+  <div class="logo-top">
+    <a href="#">
+      <h1>LOGO</h1>
+    </a>
+  </div>
+<head>
+<ul class="hList">
+  <li>
+    <a href="#click" class="menu">
+      <h2 class="menu-title">animals</h2>
+      <ul class="menu-dropdown">
+        <li>
+          <a href="#z1">麋鹿</a>
+        </li>
+        <li>
+          <a href="http://www.et.tku.edu.tw/" target="z1">馬</a>
+        </li>
+        <li>
+          <a href="http://www.et.tku.edu.tw/" target="z1">大嘴鳥</a>
+        </li>
+      </ul>
+    </a>
+  </li>
+  <li>
+    <a href="#click" class="menu">
+      <h2 class="menu-title menu-title_2nd">names</h2>
+      <ul class="menu-dropdown">
+        <li>Kevin</li>
+        <li>Jim</li>
+        <li>Andy</li>
+      </ul>
+    </a>
+  </li>
+  <li>
+    <a href="#click" class="menu">
+      <h2 class="menu-title menu-title_3rd">things</h2>
+      <ul class="menu-dropdown">
+        <li>bench</li>
+        <li>pizza</li>
+        <li>Honda CB125</li>
+        <li>space</li>
+        <li>black matter</li>
+        <li>apple</li>
+        <li>philodendron</li>
+        <li>liver</li>
+        <li>brass</li>
+      </ul>
+    </a>
+  </li>
+  <li>
+    <a href="#click" class="menu">
+      <h2 class="menu-title menu-title_4th">Movies</h2>
+      <ul class="menu-dropdown">
+        <li>Godzilla</li>
+        <li>Man on Wire</li>
+        <li>Spirited Away</li>
+        <li>Interstellar</li>
+      </ul>
+    </a>
+  </li>
+</ul>
+</head>
+<div class="menu ui">
+<div>
+  Menu
+  <span class="fontawesome-caret-down"></span>
+</div>
+<ul>
+  <li>Menu Item 1</li>
+  <li>Menu Item 2</li>
+  <li>Menu Item 3</li>
+  <li>Menu Item 4</li>
+</ul>
+</div>
+
+<div class="zoom">
+  <!-- Main content simulation -->
+<section>				
+<iframe name=z1 width="560" height="315" src="https://www.youtube.com/embed/in1AFmERU1w" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+</section>
+  <!-- Main content simulation end -->
+
+</div>
+<body>
+<main>
+   
+   <div  class="main content">
+    <h1>Apples</h1>
+    <p>The apple is the pomaceous fruit of the apple tree.</p>
+   </div>
+   <!DOCTYPE html>
+   <html lang="en">
+   <head>
+       <meta charset="UTF-8">
+       <meta http-equiv="X-UA-Compatible" content="IE=edge">
+       <meta name="viewport" content="width=device-width, initial-scale=1.0">
+       <title>Document</title>
+       <style>
+           :root {
+               --w: 240px; 
+               --h: 240px; 
+           }
+   
+           #book {
+               height: var(--h);
+               position: relative;
+               display: flex;
+               justify-content: center;
+               align-items: center;
+               transition: 1s;
+               perspective: 1600px;
+               transform-style: preserve-3d;
+           }
+           .book-cover {
+               /* 封面比页面每条边宽25px */
+               height: calc(var(--h) + 50px);
+               width: calc(var(--w) + 50px);
+               position: absolute;
+               background-image: linear-gradient(to bottom, #ff5c33, #ff9166, #3dd6f5);
+               border-top-right-radius: 20px;
+               border-bottom-right-radius: 20px;
+               transition: 1s;
+               transform-origin: left;
+               backface-visibility: visible;
+               border: .5px solid black;
+           }
+           .book-page {
+               height: var(--h);
+               width: var(--w);
+               position: absolute;
+               z-index: 100;
+               transition: 1s;
+               /* 封面比页面每条边宽的长度 */
+               transform-origin: -25px;
+               background-size: cover;
+               backface-visibility: visible;
+           }
+   
+           #control {
+               margin-top: 60px;
+               user-select: none;
+           }
+           #control button {
+               display: inline-block;
+               width: 45px;
+               height: 45px;
+               border: 0;
+               margin: 0px 15px;
+               color: #fff;
+               font-size: 20px;
+               font-weight: bold;
+               border-radius: 50%;
+               background-color: rgba(63,63,63,.8);
+               outline: none;
+           }
+       </style>
+   </head>
+   <body>
+       <div id="book">
+           <div class="book-cover one-page"></div>
+   
+           <div class="book-page one-page"></div>
+           <div class="book-page one-page"></div>
+           <div class="book-page one-page"></div>
+           <div class="book-page one-page"></div>
+           <div class="book-page one-page"></div>
+           <div class="book-page one-page"></div>
+           <div class="book-page one-page"></div>
+           <div class="book-page one-page"></div>
+           <div class="book-page one-page"></div>
+           <div class="book-page one-page"></div>
+   
+           <div class="book-cover one-page"></div>
+       </div>
+       <div id="control">
+           <button>&lt;</button>
+           <button>&gt;</button>
+       </div>
+   
+       <script>
+           // 总页数
+           const PAGECOUNT = 12
+           // 当前页面编号
+           let pageNo = 0
+   
+           // 内容页
+           let pages = document.querySelectorAll('.book-page')
+           // 封面页
+           let cover = document.querySelectorAll('.book-cover')
+           // 按钮
+           let btn = document.querySelectorAll('#control button')
+           // 
+           let book = document.querySelector('#book')
+           // 所有页
+           let allPages = document.querySelectorAll('.one-page')
+   
+           function init() {
+               // 初始化内容页的图片
+               for (let index = 0; index < pages.length; index++) {
+                   pages[index].style.backgroundImage = "url('" + [index+1] + ".jpg')"
+                   pages[index].style.zIndex = PAGECOUNT - index - 1
+               }
+               cover[0].style.zIndex = PAGECOUNT
+               cover[1].style.zIndex = 1
+   
+               // 默认页面为封面，左按钮无效
+               btn[0].style.backgroundColor = "rgba(110, 110, 110, 0.5)"
+               btn[0].style.color = "darkgray"
+               btn[0].disabled = true
+               
+               // 左翻页
+               btn[0].onclick = function() {
+                   pageNo -- 
+                   // 如果当前是最后一页，并往前翻
+                   if ((PAGECOUNT - 1) == pageNo) {
+                       allPages[pageNo].style.transform = 'rotateY(0deg)'
+                       //( 240px + 50px ) * 0.5
+                       book.style.transform = 'translateX(145px)'
+                       btn[1].style.backgroundColor = "rgba(63, 63, 63, 0.8)"
+                       btn[1].style.color = "white"
+                       btn[1].disabled = false   
+                   }
+                   else {
+                       allPages[pageNo].style.transform = 'rotateY(0deg)'
+                   }
+                   allPages[pageNo].style.zIndex = PAGECOUNT - pageNo
+   
+                   if( 0 == pageNo ) {
+                       btn[0].style.backgroundColor = "rgba(110, 110, 110, 0.5)"
+                       btn[0].style.color = "darkgray"
+                       btn[0].disabled = true
+                       book.style.transform = 'translateX(0px)'
+                   }
+               }
+   
+               // 右翻页
+               btn[1].onclick = function() {
+                   // 如果当前是第一页，并往后翻
+                   if ( 0 == pageNo ) {
+                       allPages[pageNo].style.transform = 'rotateY(-180deg)'
+                       //( 240px + 50px ) * 0.5
+                       book.style.transform = 'translateX(145px)'
+                       btn[0].style.backgroundColor = "rgba(63, 63, 63, 0.8)"
+                       btn[0].style.color = "white"
+                       btn[0].disabled = false   
+                   }
+                   else {
+                       allPages[pageNo].style.transform = 'rotateY(-180deg)'
+                   }
+   
+                   allPages[pageNo].style.zIndex = 1000 + pageNo
+                   pageNo ++
+   
+                   if( PAGECOUNT == pageNo ) {
+                       btn[1].style.backgroundColor = "rgba(110, 110, 110, 0.5)"
+                       btn[1].style.color = "darkgray"
+                       btn[1].disabled = true
+                       book.style.transform = 'translateX(300px)'
+                   }
+               }
+           }
+           init()
+       </script>
+   </body>
+   </html>
+  <section class="accordion" id="overview">
+		<h1 class="title"><a href="#overview">Overview</a></h1>
+		<div class="content">
+			<div class="wrapper">
+				<p>
+					This CodePen demonstrates how we can animate the opening and closing
+					states of an accordion with fancy reveal animation using only CSS. This
+					concept is suitable for creating <strong>FAQ sections</strong>,
+					<strong>Table of Contents</strong>, and more.
+				</p>
+			</div>
+		</div>
+	</section>
+  <iframe id="z1" width="560" height="315" src="https://www.youtube.com/embed/bePvbuwGNsg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+</main>
+<link
+	rel="stylesheet"
+	href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.css"
+/>
+
+<video id="video" width="640" height="480" autoplay>
+
+  <script>
+      const video = document.getElementById('video');
+      
+      if(navigator.mediaDevices && navigator.mediaDevices.getUserMedia) {
+      // Not adding `{ audio: true }` since we only want video now
+      navigator.mediaDevices.getUserMedia({ video: true }).then(function(stream) {
+          video.src = window.URL.createObjectURL(stream);
+          video.play();
+      });
+  }
+  </script>
+<!-- partial -->
+  <script src='//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+</body>
+</html>
